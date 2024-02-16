@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --gray: #DDDDDD;
+    --gray-btn: rgb(240, 240, 240);
+    --search-btn: rgb(250, 33, 91);
+    --footer: rgb(247, 247, 247);
+}
+
+nav {
+    background: var(--black);
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav a {
+    color: var(--gray);
+}
+
+main {
+    background: url(images/Background\ Image.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 725px;
+    padding: 0 80px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    color: var(--white);
+}
+
+.nav-left {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.nav-left:hover {
+    cursor: pointer;
+}
+
+.nav-left #airbnb {
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    font-size: 22px;
+    gap: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-center {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.nav-center a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.nav-center a:hover {
+    border-bottom: 1px solid var(--white);
+}
+
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+}
+
+.nav-right div {
+    padding: 10px;
+}
+
+.nav-right div:hover {
+    cursor: pointer;
+    border-radius: 20px;
+    background: #dddddd25;
+}
+
+.nav-right #host {
+    margin-top: 2px;
+}
+
+.nav-right #world {
+    margin-right: 10px;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav-right .profile-btn {
+    background: var(--gray-btn);
+    padding: 5px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    background: var(--white);
+    width: 850px;
+    border-radius: 50px;
+    height: 66px;
+}
+
+.border {
+    display: flex;
+    align-items: center;
+    height: 38px;
+    border-right: 1px solid var(--gray);
+}
+
+.border a,
+.guest a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.location {
+    border-radius: 30px;
+    padding: 10px 45px;
+}
+
+.location:hover,
+.check-in:hover,
+.check-out:hover,
+.guest:hover {
+    background: var(--gray);
+    cursor: pointer;
+}
+
+.location input[type="text"] {
+    border: none;
+    background: transparent;
+}
+
+.check-in input[type="text"],
+.check-out input[type="text"] {
+    border: none;
+    background: transparent;
+    width: 130px;
+}
+
+.guest input[type="number"] {
+    width: 115px;
+    border: none;
+    background: transparent;
+}
+
+.check-in,
+.check-out {
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+.guest {
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-right: 5px;
+}
+
+.search-icon {
+    width: 75px;
+}
+
+button.search-box {
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    background: var(--search-btn);
+}
+
+button.search-box:hover {
+    cursor: pointer;
+}
+
+/* PLAN */
+
+.plan {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 625px;
+    color: var(--white);
+}
+
+.plan-container {
+    width: 500px;
+}
+
+.plan-container>span {
+    font-size: 58px;
+    font-weight: bold;
+}
+
+button.explore-btn {
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    background: var;
+}
+
+/* SECTION PLACES */
+
+section.places {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    padding: 0 80px;
+    gap: 10px 35px;
+}
+
+.places .item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 400px;
+}
+
+.places .item a>img {
+    width: 70px;
+    border-radius: 10px;
+}
+
+.places-name {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ACCOMADATION */
+
+section.accomodations {
+    padding: 0 80px;
+    font-weight: bold;
+
+}
+
+.accomodations h2 {
+    font-size: 32px;
+}
+
+.item-container {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0 50px;
+}
+
+.item-container .item a>img {
+    border-radius: 10px;
+    width: 425px;
+}
+
+.item-container .item a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* UNIQUE */
+
+section.unique {
+    padding: 40px 80px 10px;
+    background: var(--black);
+    color: var(--white);
+    margin-bottom: 50px;
+}
+
+section.unique h2 {
+    font-size: 32px;
+}
+
+section.unique span {
+    font-size: 14px;
+}
+
+section.unique .unique-container {
+    margin: 10px 0 50px;
+    display: flex;
+    gap: 10px;
+}
+
+
+
+.unique-container .item a>img {
+    border-radius: 15px;
+    width: 570px;
+}
+
+.unique-container .item a>p {
+    color: var(--white);
+    font-weight: bold;
+}
+
+.unique-container .item a {
+    text-decoration: none;
+    color: var(--white);
+
+}
+
+/* BEPART */
+
+section.bepart {
+    padding: 0 80px;
+    margin-bottom: 50px;
+}
+
+section.bepart h2 {
+    font-size: 32px;
+}
+
+section.bepart .bepart-container {
+    display: flex;
+    gap: 15px;
+}
+
+.bepart-container .item {
+    margin-top: 10px;
+}
+
+.bepart-container .item img {
+    width: 570px;
+    border-radius: 10px;
+}
+
+.item a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--black);
+}
+
+/* FOOTER */
+
+footer {
+    padding: 30px 80px 0;
+    border-top: 1px solid #DDDDDD;
+    background: var(--footer);
+    margin-bottom: 20px;
+}
+
+footer .reference {
+    display: flex;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.reference ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 25%;
+    list-style: none;
+    font-size: 14px;
+    padding-bottom: 25px;
+}
+
+ul a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+ul a:hover {
+    text-decoration: underline;
+}
+
+ul li>b {
+    font-size: 12px;
+}
+
+/* ALLRIGHT RESERVED */
+
+.allright-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.allright {
+    font-size: 14px;
+}
+
+div.privacy {
+    flex-grow: 3;
+}
+
+div.privacy a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+div.langague {
+    flex-grow: 2;
+}
+
+div.langague a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+div.socials span {
+    letter-spacing: 6px;
+}
+
+.langague,
+.socials {
+    align-self: flex-start;
+}
+
+div a img {
+    width: 16px;
+}
